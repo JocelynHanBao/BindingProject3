@@ -1,0 +1,230 @@
+main .right .right-img {
+  position: absolute;
+  width: 440px;
+  right: 30px;
+  top: 20px;
+}
+main .right .right-article {
+  width: 100%;
+  height: 580px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  cursor: pointer;
+}
+main .right .right-article > a {
+  box-sizing: border-box;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .right .right-article .article1 {
+  width: 312px;
+  height: 580px;
+  border: 1px solid #000000;
+}
+main .right .right-article .article2 {
+  width: 400px;
+  height: 290px;
+  border: 1px solid #000000;
+}
+main .right .right-article .article3 {
+  width: 312px;
+  height: 130px;
+  border: 1px solid #000000;
+}
+main .right .right-article .text1 {
+  font-family: 'DotGothic16';
+  font-weight: 400;
+  font-size: 40px;
+  transition: all 0.4s;
+}
+main .right .right-article .text2 {
+  position: relative;
+  font-family: 'Flow Circular';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  cursor: pointer;
+}
+main .right .right-article .text2 > .default {
+  transition: all 0.4s;
+}
+main .right .right-article .text2 > .active {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  font-family: 'DotGothic16';
+  transition: all 0.4s;
+}
+main .right .right-article .text2:hover > .default {
+  opacity: 0;
+}
+main .right .right-article .text2:hover > .active {
+  opacity: 1;
+}
+main .right .right-article .text3 {
+  font-family: 'DotGothic16';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+}
+main .right .right-my {
+  display: block;
+  box-sizing: border-box;
+  height: 120px;
+  margin-top: 20px;
+  padding-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'DotGothic16';
+  font-weight: 400;
+  font-size: 40px;
+  border: 1px solid #000;
+}
+@media screen and (max-width: 1279px) {
+  main .right .right-img {
+    position: relative;
+    width: 100%;
+    display: block;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+  }
+  main .right .right-article {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+  }
+  main .right .right-article > a {
+    box-sizing: border-box;
+    padding: 20px 0;
+    display: block;
+    transition: all 0.4s;
+    cursor: pointer;
+  }
+  main .right .right-article > a:hover .text1 {
+    opacity: 0;
+  }
+  main .right .right-article > a:hover .text2 > .default {
+    opacity: 0;
+  }
+  main .right .right-article > a:hover .text2 > .active {
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 1;
+  }
+  main .right .right-article .article1 {
+    width: 100%;
+    height: auto;
+    border: 0;
+  }
+  main .right .right-article .article2 {
+    width: 100%;
+    height: auto;
+    border: 0;
+  }
+  main .right .right-article .article3 {
+    width: 100%;
+    height: auto;
+    border: 0;
+  }
+  main .right .right-article .text2 {
+    margin-top: 8px;
+  }
+  main .right .right-article .text3 {
+    display: none;
+  }
+  main .right .right-my {
+    height: auto;
+    margin-top: 20px;
+    padding: 0;
+    display: block;
+    font-family: 'DotGothic16';
+    font-weight: 400;
+    font-size: 40px;
+    border: 0;
+  }
+}
+@media print {
+  main .right .right-img {
+    position: relative;
+    width: 100%;
+    display: block;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+  }
+  main .right .right-article {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 64px;
+  }
+  main .right .right-article > a {
+    box-sizing: border-box;
+    padding: 20px 0;
+    display: block;
+    transition: all 0.4s;
+    cursor: pointer;
+  }
+  main .right .right-article > a:hover .text1 {
+    opacity: 0;
+  }
+  main .right .right-article > a:hover .text2 > .default {
+    opacity: 0;
+  }
+  main .right .right-article > a:hover .text2 > .active {
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 1;
+  }
+  main .right .right-article .article1 {
+    width: 100%;
+    height: auto;
+    border: 0;
+  }
+  main .right .right-article .article2 {
+    width: 100%;
+    height: auto;
+    border: 0;
+    margin-top: 48px;
+  }
+  main .right .right-article .article3 {
+    width: 100%;
+    height: auto;
+    border: 0;
+  }
+  main .right .right-article .text1 {
+    font-size: 64px;
+  }
+  main .right .right-article .text2 {
+    margin-top: 12px;
+  }
+  main .right .right-article .text2 .default {
+    opacity: 0;
+  }
+  main .right .right-article .text2 .active {
+    font-size: 24px;
+    line-height: 36px;
+    opacity: 1;
+  }
+  main .right .right-article .text3 {
+    display: none;
+  }
+  main .right .right-my {
+    height: auto;
+    margin-top: 20px;
+    padding: 0;
+    display: block;
+    font-family: 'DotGothic16';
+    font-weight: 400;
+    font-size: 40px;
+    border: 0;
+  }
+}

@@ -1,0 +1,243 @@
+main .right .title {
+  display: none;
+}
+main .right .title .text1 {
+  font-family: "DotGothic16";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 58px;
+}
+main .right .title .text2 {
+  position: relative;
+  font-family: "Flow Circular";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  cursor: pointer;
+}
+main .right .title .text2 > .default {
+  transition: all 0.4s;
+}
+main .right .title .text2 > .active {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  font-family: "Codystar";
+  transition: all 0.4s;
+}
+main .right .title .text2:hover > .default {
+  opacity: 0;
+}
+main .right .title .text2:hover > .active {
+  opacity: 1;
+}
+main .right .top {
+  display: flex;
+  justify-content: space-between;
+}
+main .right .top .top-date {
+  font-family: "DotGothic16";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+}
+main .right .top .top-right {
+  display: flex;
+  align-items: center;
+}
+main .right .top .top-right .top-right-img > img {
+  width: 246px;
+  height: 246px;
+}
+main .right .top .top-right .top-right-text {
+  position: relative;
+  width: 240px;
+  height: 100%;
+  font-family: "Flow Circular";
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 40px;
+  cursor: pointer;
+  margin-left: 36px;
+}
+main .right .top .top-right .top-right-text > .default {
+  transition: all 0.4s;
+}
+main .right .top .top-right .top-right-text > .active {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  font-family: "Codystar";
+  transition: all 0.4s;
+  font-size: 22px;
+}
+main .right .top .top-right .top-right-text:hover > .default {
+  opacity: 0;
+}
+main .right .top .top-right .top-right-text:hover > .active {
+  opacity: 1;
+}
+main .right .bot {
+  height: 466px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .right .bot .bot-text {
+  height: 466px;
+  margin-right: 36px;
+  font-family: "ITC Avant Garde Gothic";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  overflow-y: auto;
+}
+main .right .bot .bot-back {
+  width: 262px;
+  height: 466px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 0 24px 24px 0;
+  font-family: "DotGothic16";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 58px;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+@media screen and (max-width: 1279px) {
+  main .right .title {
+    display: block;
+  }
+  main .right .title .text2 {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    cursor: pointer;
+  }
+  main .right .title .text2:hover > .default {
+    opacity: 0;
+  }
+  main .right .title .text2:hover > .active {
+    opacity: 1;
+  }
+  main .right .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  main .right .top .top-date {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 8px 0;
+  }
+  main .right .top .top-right {
+    display: flex;
+    align-items: center;
+  }
+  main .right .top .top-right .top-right-img {
+    width: 100%;
+    height: 108px;
+    overflow: hidden;
+  }
+  main .right .top .top-right .top-right-img > img {
+    width: 100%;
+    height: 108px;
+  }
+  main .right .top .top-right .top-right-text {
+    display: none;
+  }
+  main .right .bot {
+    height: auto;
+    margin-top: 8px;
+    display: block;
+  }
+  main .right .bot .bot-text {
+    height: 370px;
+    margin: 0;
+    font-family: "ITC Avant Garde Gothic";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    overflow-y: auto;
+  }
+  main .right .bot .bot-back {
+    display: none;
+  }
+}
+@media print {
+  main .right .title {
+    display: block;
+  }
+  main .right .title .text2 {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    cursor: pointer;
+  }
+  main .right .title .text2 .default {
+    opacity: 0;
+  }
+  main .right .title .text2 .active {
+    opacity: 1;
+  }
+  main .right .title .text2:hover > .default {
+    opacity: 0;
+  }
+  main .right .title .text2:hover > .active {
+    opacity: 1;
+  }
+  main .right .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  main .right .top .top-date {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 8px 0;
+  }
+  main .right .top .top-right {
+    display: flex;
+    align-items: center;
+  }
+  main .right .top .top-right .top-right-img {
+    width: 100%;
+    height: 108px;
+    overflow: hidden;
+  }
+  main .right .top .top-right .top-right-img > img {
+    width: 100%;
+    height: 108px;
+  }
+  main .right .top .top-right .top-right-text {
+    display: none;
+  }
+  main .right .bot {
+    height: auto;
+    margin-top: 8px;
+    display: block;
+  }
+  main .right .bot .bot-text {
+    height: auto;
+    margin: 0;
+    font-family: "ITC Avant Garde Gothic";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    overflow-y: auto;
+  }
+  main .right .bot .bot-back {
+    display: none;
+  }
+}
